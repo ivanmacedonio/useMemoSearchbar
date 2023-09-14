@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Searchbar } from "./components/Searchbar";
 
 const people = [
   {
@@ -88,7 +89,10 @@ function App() {
         <h1>Current : {currentOpction}</h1>
       </div>
       <div>
-        {data.map(item=> <div>{item.title}</div>)}
+        <Searchbar items={data} onItemSelected={() => {}}/>
+      </div>
+      <div>
+        
       </div>
     </>
   );
